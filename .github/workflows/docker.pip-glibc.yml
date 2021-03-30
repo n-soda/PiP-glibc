@@ -92,4 +92,4 @@ jobs:
           token: ${{ secrets.PIP_BUILD_TOKEN }}
           repository: ${{ matrix.repo }}
           event-type: pip-glibc-built
-          client-payload: '{ "distros": ${{ toJson(github.event.client_payload.distros) }} }'
+          client-payload: '{ "distros": ${{ toJson(github.event.client_payload.distros) }}, "archs": ["amd64", "arm64"], "pip_versions": ["2", "3"], "pip_ref": "", "pip_testsuite-ref": "", "dispatch": true  }'
