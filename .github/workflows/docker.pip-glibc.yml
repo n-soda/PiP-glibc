@@ -3,7 +3,7 @@ name: pip-glibc Docker image
 on: 
 
   repository_dispatch:
-    types: [pip-glibc-rpm-built]
+    types: [pip-glibc-rpm-built, pip-glibc-docker-invoke]
 
 jobs:
 

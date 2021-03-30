@@ -2,7 +2,7 @@ name: pip-glibc RPM
 
 on:
   repository_dispatch:
-    types: [pip-glibc-test-ok]
+    types: [pip-glibc-test-ok, pip-glibc-rpm-invoke]
 
 jobs:
 

@@ -42,5 +42,5 @@ jobs:
         with:
           token: ${{ secrets.PIP_BUILD_TOKEN }}
           repository: ${{ github.repository }}
-          event-type: pip-glibc-rpm-built
+          event-type: pip-glibc-docker-invoke
           client-payload: '{ "distros": ${{ steps.to_array.outputs.distros }}, "archtypes": ${{ steps.to_array.outputs.archtypes }} }'

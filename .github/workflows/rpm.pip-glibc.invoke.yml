@@ -42,5 +42,5 @@ jobs:
         with:
           token: ${{ secrets.PIP_BUILD_TOKEN }}
           repository: ${{ github.repository }}
-          event-type: pip-glibc-test-ok
+          event-type: pip-glibc-rpm-invoke
           client-payload: '{ "distros": ${{ steps.to_array.outputs.distros }}, "archs": ${{ steps.to_array.outputs.archs }} }'
